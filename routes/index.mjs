@@ -1,13 +1,7 @@
-import express from "express";
-import users from "./user.mjs";
-import orders from "./order.mjs";
-import ads from "./ads.mjs";
-import products from "./product.mjs";
-const router = express.Router();
+import express from 'express'
+import users from './users.mjs'
+const router = express.Router()
 
-router.use("/users", users);
-router.use("/orders", orders);
-router.use("/ads", ads);
-router.use("/products", products);
+router.use('/users', users)
 
-export default router;
+export default router
